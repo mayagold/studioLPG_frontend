@@ -1,0 +1,29 @@
+@media only screen and (min-width: 800px) {
+  body {
+    background: whitesmoke;
+    font-family: "Arial", sans-serif;
+    font-weight: 200; }
+    body h1 {
+      font-weight: 100; }
+
+  .color-scheme {
+    border: 1px solid whitesmoke;
+    height: 200px;
+    width: 200px; }
+
+  .blue {
+    color: #51627F; }
+
+  .b {
+    background: #36454f; }
+
+  .c {
+    background: #9F237F; }
+
+  .d {
+    background: #D8D9D8; }
+
+  .e {
+    background: #D6D8C8; } }
+
+/*# sourceMappingURL=main.css.map */

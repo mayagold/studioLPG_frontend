@@ -1,0 +1,58 @@
+// Color Scheme
+
+$lpg-white: whitesmoke;
+$lpg-blue: #51627F;
+$lpg-grey:  #36454f;
+$lpg-pink: #9F237F;
+$lpg-light-grey: #D8D9D8;
+$lpg-green: #D6D8C8;
+
+// Breakpoints
+
+// iPad
+$ipad-breakpoint: 600px;
+// Desktop
+$desktop-breakpoint: 800px;
+
+
+// Styling for Desktop
+
+@media only screen and (min-width: $desktop-breakpoint) {
+
+  body {
+    background: $lpg-white;
+    font-family: "Arial", sans-serif;
+    font-weight: 200;
+    h1 {
+      font-weight: 100;
+    }
+  }
+
+
+  .color-scheme {
+    border: 1px solid $lpg-white;
+    height: 200px;
+    width: 200px;
+  }
+
+  .blue {
+    color: $lpg-blue;
+  }
+
+  .b {
+    background: $lpg-grey;
+  }
+
+  .c {
+    background: $lpg-pink;
+  }
+
+  .d {
+    background: $lpg-light-grey;
+  }
+
+  .e {
+    background: $lpg-green;
+  }
+
+}

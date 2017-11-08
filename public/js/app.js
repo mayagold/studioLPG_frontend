@@ -6,17 +6,14 @@ app.controller('mainController', ['$http', function($http){
 
   this.user = {};
 
-
   this.login = (userPass) => {
     $http({
       method: 'POST',
       url: this.url + '/users/login',
       data: { user: { username: userPass.username, password: userPass.password } }
     }).then(response => {
-      console.log(response);
       this.user = response.data.user;
       localStorage.setItem('token', JSON.stringify(response.data.token));
-      console.log(localStorage);
       this.getUser();
     });
   }
@@ -29,7 +26,6 @@ app.controller('mainController', ['$http', function($http){
         Authorization: 'Bearer ' + JSON.parse(localStorage.getItem('token'))
       }
     }).then( response => {
-      console.log(response);
       if (response.data.status === 401) {
         this.error = "Unauthorized";
       } else {
@@ -42,5 +38,5 @@ app.controller('mainController', ['$http', function($http){
     localStorage.clear('token');
     location.reload();
   }
-  
+
 }])

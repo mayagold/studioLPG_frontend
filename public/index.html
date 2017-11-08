@@ -62,6 +62,12 @@
         Carrboro, NC 27510<br/>
         (919) 942-5554
         </li>
+        <br/>
+        <li><a href="https://www.fearrington.com/mcintyres-books/">MCINTYRE'S BOOKS</a><br/>
+        220 Market Street, Fearrington Village<br/>
+        Pittsboro, NC 27312<br/>
+        (919) 942-5554
+        </li>
       </ul>
     </div>
 
@@ -70,7 +76,7 @@
         Site Manager Login
         <form class="login-form" ng-submit="ctrl.login(userPass); showLoginForm=false">
           <input type="text" name="" value="" ng-model="userPass.username" placeholder="username">
-          <input type="text" name="" value="" ng-model="userPass.password" placeholder="password">
+          <input type="password" name="" value="" ng-model="userPass.password" placeholder="password">
           <input type="submit">
         </form>
       </div>
@@ -80,9 +86,6 @@
     <h2 ng-show="ctrl.loggedIn===true">UPLOAD PHOTO</h2>
     <h2 ng-show="ctrl.loggedIn===true">POST TO BLOG</h2>
     <h2 ng-show="ctrl.loggedIn===true" ng-click="ctrl.logout()">Log Out</h2>
-
-    <h2 ng-click="ctrl.getUser()">CLICK</h2>
-    <div>{{ctrl.loggedIn}}</div>
 
     <div class="footer">
       <p>Copyright &copy; 2017 <a href="https://mayagold.github.io/Portfolio/">MayaGold</a> All Rights Reserved.</p>

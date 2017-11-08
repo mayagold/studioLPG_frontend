@@ -65,10 +65,10 @@
       </ul>
     </div>
 
-    <div class="login-form-modal">
+    <div class="login-form-modal" ng-show="showLoginForm===true">
       <div class="form-container">
         Site Manager Login
-        <form class="login-form" ng-submit="ctrl.login(userPass)">
+        <form class="login-form" ng-submit="ctrl.login(userPass); showLoginForm=false">
           <input type="text" name="" value="" ng-model="userPass.username" placeholder="username">
           <input type="text" name="" value="" ng-model="userPass.password" placeholder="password">
           <input type="submit">
@@ -76,6 +76,7 @@
       </div>
     </div>
 
+    <h2 ng-hide="ctrl.loggedIn===true" ng-click="showLoginForm=true">LOG IN</h2>
     <h2 ng-show="ctrl.loggedIn===true">UPLOAD PHOTO</h2>
     <h2 ng-show="ctrl.loggedIn===true">POST TO BLOG</h2>
     <h2 ng-show="ctrl.loggedIn===true" ng-click="ctrl.logout()">Log Out</h2>
@@ -95,5 +96,6 @@
         <a href="#"><img src="twitter_icon.png" alt=""></a>
       </div>
     </div>
+
   </body>
 </html>

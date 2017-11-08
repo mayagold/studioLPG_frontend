@@ -65,6 +65,17 @@
       </ul>
     </div>
 
+    <div class="login-form-modal">
+      <div class="form-container">
+        Site Manager Login
+        <form class="login-form" ng-submit="ctrl.login(userPass)">
+          <input type="text" name="" value="" ng-model="userPass.username" placeholder="username">
+          <input type="text" name="" value="" ng-model="userPass.password" placeholder="password">
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+
     <div class="footer">
       <p>Copyright &copy; 2017 <a href="https://mayagold.github.io/Portfolio/">MayaGold</a> All Rights Reserved.</p>
       <div class="social-media-icon">

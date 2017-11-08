@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto:300|Yantramanav" rel="stylesheet">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Angular Library -->
@@ -12,50 +14,67 @@
     <title>Studio LPG</title>
   </head>
   <body ng-controller="mainController as ctrl">
+
     <div class="header">
-      <div class="contact-heading">
-        <h1>{{ctrl.test}}</h1>
-        <a href="#">studioLPG</a>
-      </div>
-      <h1 class="blue">
-        studio LPG
-      </h1>
-      <div class="nav-menu">
+        <h1 class="name">Lisa Philipps <span class="middlename"></span><span class="lastname">Goldstein</span></h1>
+    </div>
+
+
+
+    <div class="main">
+
+      <div class="nav-menu a">
         <div class="nav-item">
-          <a href="#">Live Drawing</a>
+          <a href="#">Charcoal</a>
         </div>
-        <div class="nav-item">
+        <div class="nav-item b">
           <a href="#">Painting</a>
         </div>
-        <div class="nav-item">
+        <div class="nav-item c">
           <a href="#">Purchase</a>
         </div>
-        <div class="nav-item">
+        <div class="nav-item d">
           <a href="#">Blog</a>
         </div>
-        <div class="nav-item">
+        <div class="nav-item e">
           <a href="#">About</a>
         </div>
       </div>
+
+      <div class="nav-page">
+        <img id="featured-image" class="drop-shadow" src="detail.jpeg" alt=""/>
+      </div>
+
     </div>
-    <div class="main">
-      Main content
-    </div>
+
+
     <div class="galleries">
-      galleries
+      <h4>GALLERIES</h4>
+      <ul>
+        <li><a href="http://www.gageacademy.org/">GAGE ACADEMY OF ART</a><br/>
+        1501 10th Ave E #101<br/>
+        Seattle, WA 98102<br/>
+        (206) 323-4243
+        </li>
+        <br/>
+        <li><a href="http://www.camerons-gallery.com/">CAMERON'S GALLERY</a><br/>
+        370 E Main St #130<br/>
+        Carrboro, NC 27510<br/>
+        (919) 942-5554
+        </li>
+      </ul>
     </div>
+
     <div class="footer">
+      <p>Copyright &copy; 2017 <a href="https://mayagold.github.io/Portfolio/">MayaGold</a> All Rights Reserved.</p>
       <div class="social-media-icon">
-        <a href="#">twitter</a>
+        <a href="#"><img src="instagram_icon.png" alt=""></a>
       </div>
       <div class="social-media-icon">
-        <a href="#">facebook</a>
+        <a href="#"><img src="facebook_icon.png" alt=""></a>
       </div>
       <div class="social-media-icon">
-        <a href="#">instagram</a>
-      </div>
-      <div class="social-media-icon">
-        <a href="#">email</a>
+        <a href="#"><img src="twitter_icon.png" alt=""></a>
       </div>
     </div>
   </body>

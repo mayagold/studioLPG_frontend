@@ -1,29 +1,90 @@
 @media only screen and (min-width: 800px) {
+  a {
+    text-decoration: none;
+    color: #d0cfcf; }
+
+  a:hover {
+    color: #7a7d7d; }
+
   body {
-    background: whitesmoke;
-    font-family: "Arial", sans-serif;
-    font-weight: 200; }
+    background: white;
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 200;
+    font-size: 40px; }
     body h1 {
       font-weight: 100; }
+    body .name {
+      text-transform: uppercase;
+      display: block;
+      font-size: 48px;
+      margin-top: 66px;
+      margin-left: 72px;
+      font-weight: 200;
+      font-family: "Roboto", sans-serif;
+      color: #95a792;
+      text-align: left; }
+      body .name .lastname {
+        color: #d0cfcf; }
+    body .nav-menu {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      left: 20px;
+      top: 0;
+      width: calc(20vw - 30px);
+      padding: 10px;
+      font-size: 24px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-transform: uppercase;
+      color: #596c68; }
+      body .nav-menu * {
+        flex-wrap: wrap;
+        padding: 18px; }
+    body .main {
+      width: 100vw;
+      display: flex;
+      text-align: center;
+      padding: 84px 36px; }
+      body .main .drop-shadow {
+        border: 6px solid rgba(222, 222, 222, 0.6); }
+      body .main .nav-page {
+        margin: 0 auto;
+        flex: 3; }
+    body #featured-image {
+      height: 60vh;
+      margin: 0 auto; }
 
-  .color-scheme {
-    border: 1px solid whitesmoke;
-    height: 200px;
-    width: 200px; }
+  .galleries {
+    padding: 66px; }
+    .galleries h4 {
+      font-size: 36px;
+      font-weight: 100;
+      color: #95a792;
+      font-family: "Roboto", sans-serif; }
+    .galleries ul {
+      color: #d0cfcf;
+      padding: 0; }
+      .galleries ul li {
+        list-style: none;
+        font-size: 24px; }
 
-  .blue {
-    color: #51627F; }
-
-  .b {
-    background: #36454f; }
-
-  .c {
-    background: rgba(159, 35, 127, 0.7); }
-
-  .d {
-    background: #D8D9D8; }
-
-  .e {
-    background: #D6D8C8; } }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 40px);
+    padding: 40px;
+    height: 5vh; }
+    .footer p {
+      flex: 18;
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      color: #d0cfcf;
+      text-transform: uppercase; }
+    .footer .social-media-icon {
+      flex: 1; }
+      .footer .social-media-icon img {
+        height: 48px; } }
 
 /*# sourceMappingURL=main.css.map */

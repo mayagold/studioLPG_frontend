@@ -1,17 +1,12 @@
-// Color Scheme
 
-$lpg-white: whitesmoke;
-$lpg-blue: #51627F;
-$lpg-grey:  #36454f;
-$lpg-pink: rgba(159,35,127,.7);
-$lpg-light-grey: #D8D9D8;
-$lpg-green: #D6D8C8;
+$lpg-white: #ffffff;
+$lpg-dark-grey: #7a7d7d;
+$lpg-grey:  #d0cfcf;
+$lpg-offwhite: #fffbfe;
+$lpg-dark-green: #596c68;
+$lpg-green: #95a792;
 
-// Breakpoints
-
-// iPad
 $ipad-breakpoint: 600px;
-// Desktop
 $desktop-breakpoint: 800px;
 
 
@@ -19,40 +14,131 @@ $desktop-breakpoint: 800px;
 
 @media only screen and (min-width: $desktop-breakpoint) {
 
+  a {
+    text-decoration: none;
+   color: $lpg-grey ;
+  }
+  a:hover {
+    color: $lpg-dark-grey;
+  }
+
   body {
-    background: $lpg-white;
-    font-family: "Arial", sans-serif;
+    background: white;
+    font-family: "Yantramanav", sans-serif;
     font-weight: 200;
+    font-size: 40px;
+
+
+
     h1 {
       font-weight: 100;
     }
+
+    .name {
+      text-transform: uppercase;
+      display: block;
+      font-size: 48px;
+      margin-top: 66px;
+      margin-left: 72px;
+      font-weight: 200;
+      font-family: "Roboto", sans-serif;
+      color: $lpg-green;
+      text-align: left;
+
+      .lastname {
+        color: $lpg-grey;
+      }
+
+    }
+
+    .nav-menu {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      left: 20px;
+      top: 0;
+      width: calc(20vw - 30px);
+      padding: 10px;
+      font-size: 24px;
+      justify-content:flex-start;
+      align-items: flex-start;
+      text-transform: uppercase;
+      color: $lpg-dark-green;
+
+      * {
+        flex-wrap: wrap;
+        padding: 18px;
+      }
+
+    }
+
+    .main {
+      width: 100vw;
+      display: flex;
+      text-align: center;
+      padding: 84px 36px;
+      .drop-shadow {
+        border: 6px solid rgba(222,222,222,.6)
+      }
+
+      .nav-page {
+        margin: 0 auto;
+        flex: 3;
+      }
+    }
+
+    #featured-image {
+      height: 60vh;
+      margin: 0 auto;
+    }
+
   }
 
+  .galleries {
+    padding: 66px;
 
-  .color-scheme {
-    border: 1px solid $lpg-white;
-    height: 200px;
-    width: 200px;
+    h4 {
+      font-size: 36px;
+      font-weight: 100;
+      color: $lpg-green;
+      font-family: "Roboto", sans-serif;
+    }
+
+    ul {
+      color: $lpg-grey;
+      padding: 0;
+      li {
+        list-style: none;
+        font-size: 24px;
+      }
+    }
   }
 
-  .blue {
-    color: $lpg-blue;
-  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 40px);
+    padding: 40px;
+    height: 5vh;
 
-  .b {
-    background: $lpg-grey;
-  }
+    p {
+      flex: 18;
+      font-size: 24px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      color: $lpg-grey;
+      text-transform: uppercase;
+    }
 
-  .c {
-    background: $lpg-pink;
-  }
+    .social-media-icon {
+      flex: 1;
 
-  .d {
-    background: $lpg-light-grey;
-  }
+      img {
+        height: 48px;
+      }
 
-  .e {
-    background: $lpg-green;
+    }
+
   }
 
 }
